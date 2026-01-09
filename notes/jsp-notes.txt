@@ -1,0 +1,88 @@
+Jsp - Java Server Pages:-
+-------------------------
+
+	HttpServlet
+	  |
+	FirstServlet
+	
+	1.init()
+	2.service()
+	3.destroy()	
+
+
+			1._jspInit()
+			2._jspService
+			3._jspDestroy	
+
+			     |	
+			HttpJspBase
+			     |
+	test1.jsp------>test1_jsp.java------>test1_jsp.class--->run
+
+
+	HTML --- Html code
+
+	jsp----------[(10%)Java Code + (90%)Html Code]
+	 |
+	Servlet------[(90%)Java Code + (10%)Html Code]
+--------------------------------------------------------------------------
+
+test1.jsp
+  |
+test1_jsp.java(Convert into Servlet File)
+  |
+test1_jsp.class(Compile of Servlet File)
+  |
+ run(Output)
+
+
+
+			1._jspInit()
+			2._jspService
+			3._jspDestroy	
+
+			     |	
+			HttpJspBase
+			     |
+	test1.jsp------>test1_jsp.java------>test1_jsp.class--->run
+
+Scripting Elements:-
+---------------------
+
+	1. Scriptlet Tag:- jsp---->servlet--->service(){ Java Code }
+	---------------------
+	<%
+
+		Java Code
+	%>
+
+
+	2. Expression Tag:-
+	---------------------
+	<%= 10+20 %>
+
+	3. Declaration Tag:-
+	---------------------
+
+	<%!
+		int getCube(int no)
+		{
+			return (no*no*no);
+		}
+	%>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

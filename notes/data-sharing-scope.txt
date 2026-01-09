@@ -1,0 +1,33 @@
+Data Sharing Scope:-
+--------------------
+
+	servlet1-------->servlet2----------->servlet3
+
+	1. request(servlet1-------->servlet2----------->servlet3)
+	----------------------
+
+		1. setAttribute(String key,Object value);
+		2. Object value = getAttribute(String key);
+		3. removeAttribute(String key);	
+
+			    session
+	2. session(login<-------------->logout)
+	-------------
+		1. setAttribute(String key,Object value);
+		2. Object value = getAttribute(String key);
+		3. removeAttribute(String key);	
+
+	3. application
+	-----------------
+		1. setAttribute(String key,Object value);
+		2. Object value = getAttribute(String key);
+		3. removeAttribute(String key);	
+
+	Single-Web--Application
+	      |	
+	 ServletContext(Single Object)
+	      |
+ ---------------------------------------------------
+  |	       |		|		|
+Servlet1    Servlet2           Servlet3       Servlet4
+ 		

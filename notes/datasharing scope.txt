@@ -1,0 +1,23 @@
+
+2. session
+	1.setAttribute(String key,Object value);
+	2.removeAttribute(String key);
+	3.getAttribute(String key);
+
+
+			session
+	login<----------------------------->logout
+	userName
+	password
+	   |
+	session create
+	HttpSession session = request.getSession();
+	session.set
+	
+
+
+3. application
+
+	1.setAttribute(String key,Object value);
+	2.removeAttribute(String key);
+	3.getAttribute(String key);
