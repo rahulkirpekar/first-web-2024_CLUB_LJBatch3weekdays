@@ -226,5 +226,16 @@
 	<servlet-mapping>
 		<servlet-name>SixteenServlet</servlet-name>
  		<url-pattern>/SixteenServlet</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+ 		<servlet-name>ListStudentServlet</servlet-name>
+ 		<servlet-class>com.royal.controller.ListStudentServlet</servlet-class>
+ 	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListStudentServlet</servlet-name>
+ 		<url-pattern>/ListStudentServlet</url-pattern>
 	</servlet-mapping>	
+	
+	
 </web-app>
